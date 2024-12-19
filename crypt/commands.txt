@@ -21,14 +21,14 @@ curl -X POST "http://127.0.0.1:5000/user" \
 -d '{"username": "User3"}'
 
 ## Продажа/ покупка (там где x-user-key вставить сгенерированный пользовательский)
-curl -X POST "http://127.0.0.1:5000/order" \ 
+curl -X POST "http://127.0.0.1:5000/order" \
   -H "Content-Type: application/json" \
-  -H "X-USER-KEY: 6065111702" \
+  -H "X-USER-KEY: 1386053754" \
   -d '{"pair_id": 1, "quantity": 300, "price": 0.015, "type": "buy"}'
 
 curl -X POST "http://127.0.0.1:5000/order" \
   -H "Content-Type: application/json" \
-  -H "X-USER-KEY: 5155190477" \
+  -H "X-USER-KEY: 7807362060" \
   -d '{"pair_id": 1, "quantity": 200, "price": 0.01, "type": "sell"}'
 
 
